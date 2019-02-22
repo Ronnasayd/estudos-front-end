@@ -1,0 +1,67 @@
+.container{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    flex-direction: row
+}
+div{
+    background-color:#efefef;
+    text-align: center;
+    color: #6f6f6f;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.4)
+
+}
+.col-1{
+    min-width: 8.33%;
+    max-width: 8.33%;
+
+}
+.col-2{
+    min-width: 16.66%;
+    max-width: 16.66%;
+
+}
+
+.col-3{
+    min-width: 25%;
+    max-width: 25%;
+}
+.col-4{
+    min-width: 33.33%;
+    max-width: 33.33%;
+}
+.col-5{
+    min-width: 41.66%;
+    max-width: 41.66%;
+}
+.col-6{
+    min-width: 50%;
+    max-width: 50%;
+}
+.col-7{
+    min-width: 58.33%;
+    max-width: 58.33%;
+}
+.col-8{
+    min-width: 66.66%;
+    max-width: 66.66%;
+}
+.col-9{
+    min-width: 75%;
+    max-width: 75%;
+}
+
+.col-10{
+    min-width: 83.33%;
+    max-width: 83.33%;
+}
+
+.col-11{
+    min-width: 91.66%;
+    max-width: 91.66%;
+}
+
+.col-12{
+    min-width: 100%;
+    max-width: 100%;
+}
