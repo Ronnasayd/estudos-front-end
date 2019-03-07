@@ -1,0 +1,59 @@
+$button-color:rgb(5,191,204);
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(2, 35, 61);
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.btn{
+    display: block;
+    width: 45px;
+    height: 50px;
+    box-sizing: border-box;
+    background: transparent;
+    color: white; 
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 1px 8px 2px rgba(0,0,0,0.3);
+    overflow: hidden;
+    border-radius: 5px;
+    border: 2px solid $button-color;
+    transition: width 1s, background 1s; 
+}
+.btn:hover{
+    width: 200px;
+    background: $button-color;
+}
+.btn i{
+    color: $button-color;
+    font-size: 25px;
+    position: absolute;
+    top:50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.btn span{
+    opacity: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    left: 60px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%); 
+    transition: opacity 1.5s;
+}
+.btn:hover span{
+    opacity: 1;
+}
+.btn:hover i{
+    color: white;
+}
