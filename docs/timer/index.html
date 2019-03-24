@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags begin -->
+    <meta charset="UTF-8">
+    <meta name="Description" content="Put your description here.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/dist/css/reset.min.css">
+    <link rel="stylesheet" href="static/dist/css/main.min.css">
+    <title>timer</title>
+</head>
+
+<body>
+    <div class="timer-text">
+        <h1>00:00</h1>
+    </div>
+    <div class="timer-container">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="timer" x="0px" y="0px" width="320px" height="320px" viewBox="0 0 320 320">
+            <circle fill="none" stroke="#E5E5E5" stroke-width="18" cx="160" cy="160" r="143" />
+            <!-- dasharray: 2*pi*raio -->
+            <!-- dashoffset: dasharray*(1 - (counter/counterMax)) -->
+            <circle id="timer-counter" fill="none" stroke="#067daf" stroke-width="18" cx="160" cy="160" r="143" />
+        </svg>
+    </div>
+    <script src="static/dist/js/main.min.js"></script>
+</body>
+
+</html>
