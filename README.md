@@ -1,2 +1,2 @@
-# estudos-front-end
-https://ronnasayd.github.io/estudos-front-end/
+# front-end-study
+https://ronnasayd.github.io/front-end-study/
