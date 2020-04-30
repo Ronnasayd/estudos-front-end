@@ -4,6 +4,8 @@ window.addEventListener("load", function () {
   var preview = document.getElementById("preview");
   var next = document.getElementById("next");
   var container = document.querySelector(".container");
+  var items = document.querySelectorAll(".item");
+  var backImage = document.querySelector(".back-image");
   var active_class = 0;
   container.querySelectorAll("section")[active_class].classList.add("active");
   preview.addEventListener("click", function () {
@@ -13,7 +15,6 @@ window.addEventListener("load", function () {
       active_class -= 1;
     }
 
-    console.log(active_class, container.children[active_class]);
     container.children[active_class].scrollIntoView({
       behavior: "smooth"
     });
@@ -25,9 +26,14 @@ window.addEventListener("load", function () {
       active_class += 1;
     }
 
-    console.log(active_class, container.children[active_class]);
     container.children[active_class].scrollIntoView({
       behavior: "smooth"
+    });
+  });
+  items.forEach(function (item) {
+    item.addEventListener("mouseover", function () {
+      var imageSrc = item.querySelector("img").src;
+      backImage.style.backgroundImage = "url(\"".concat(imageSrc, "\")");
     });
   });
 });
